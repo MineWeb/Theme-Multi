@@ -1,1 +1,39 @@
-{"name":"Multi","slug":"Multi","author":"Automate59go","version":"1.1.0","apiID":0,"slider":true,"configurations":{"favicon_url":"","join_text":"Rejoins les","join_url":"http://mineweb.org","slider_text":"rtyrtyrty","slider_url":"http://mineweb.org","vote_text":"viens voter","vote_url":"http://mineweb.org","footer":"Copyright","homepage_features":[{"title":"Mon titre","icon":"user","message":"Mon super message"},{"title":"Mon titre 2","icon":"cog","message":"Mon super message 2"},{"title":"Mon titre 3","icon":"sign-out","message":"Mon super message 3"}],"logo":false},"supported":{"CMS":"^1.2.0","eywek.shop.1":"^1.1.0","eywek.support.2":"^1.0.2","eywek.vote.3":"^2.0.0"}}
+{
+    "name": "Multi",
+    "slug": "Multi",
+    "author": "Automate59go",
+    "version": "1.2.0",
+    "apiID": 0,
+    "slider": true,
+    "configurations": {
+        "favicon_url": "",
+        "join_text": "Rejoins les",
+        "join_url": "https:\/\/mineweb.org",
+        "slider_text": "rtyrtyrty",
+        "slider_url": "http:\/\/mineweb.org",
+        "vote_text": "Viens voter",
+        "vote_url": "https:\/\/mineweb.org",
+        "footer": "Copyright",
+        "homepage_features": [
+            {
+                "title": "Mon titre",
+                "icon": "user",
+                "message": "Mon super message"
+            },
+            {
+                "title": "Mon titre 2",
+                "icon": "cog",
+                "message": "Mon super message 2"
+            },
+            {
+                "title": "Mon titre 3",
+                "icon": "sign-out",
+                "message": "Mon super message 3"
+            }
+        ],
+        "logo": false
+    },
+    "supported": {
+        "CMS": "^1.6.0",
+    }
+}

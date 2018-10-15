@@ -11,7 +11,7 @@
         <?php
           foreach ($search_slider as $k => $v) {
 
-            echo '<div class="item" style="background-image:url('.$v['Slider']['url_img'].');">';
+            echo '<div class="item" style="background:url('.$v['Slider']['url_img'].') no-repeat;background-size: auto;background-position: center;">';
                echo '<div class="container">';
                                       echo '<center><h1 class="title-one" style="margin-top : 20%; color: white; font-size: 64px;">'.before_display($v['Slider']['title']).'</h1></center>';
                                         echo '<p class="text-center" style="color: white; font-size: 25px;">'.before_display($v['Slider']['subtitle']).'</p>';

@@ -58,7 +58,7 @@
                 <input type="text" class="form-control" value="<?= $Lang->date($user['created']) ?>" disabled>
               </div>
             </div>
-            <?php if($EyPlugin->isInstalled('eywek.shop.1')) { ?>
+            <?php if($EyPlugin->isInstalled('eywek.shop')) { ?>
               <div class="col-sm-6">
                 <div class="form-group">
                   <label><?= $Lang->get('USER__MONEY') ?></label>
@@ -119,7 +119,7 @@
             </form>
           </div>
         <?php } ?>
-        <?php if($EyPlugin->isInstalled('eywek.shop.1')) { ?>
+        <?php if($EyPlugin->isInstalled('eywek.shop')) { ?>
           <div class="box clearfix no-mb">
             <div class="heading">
               <h3 class="text-uppercase"><?= $Lang->get('SHOP__USER_POINTS_TRANSFER') ?></h3>
@@ -226,6 +226,36 @@
             </form>
           </div>
         <?php } ?>
+        
+        <?php if($EyPlugin->isInstalled('eywek.shop')) { ?>
+            <div class="box clearfix no-mb">
+                <div class="heading"><h3 class="text-uppercase"><?= $Lang->get('SHOP__HISTORY_PURCHASES') ?></h3>
+                </div>
+                <div style="margin-bottom: -1rem;">
+                    <table class="table table-bordered" id="users">
+                        <thead>
+                        <tr>
+                            <th><?= $Lang->get('DASHBOARD__PURCHASES') ?> ID</th>
+                            <th><?= $Lang->get('GLOBAL__CREATED') ?></th>
+                            <th><?= $Lang->get('SHOP__ITEM_PRICE') ?></th>
+                            <th class="right"><?= $Lang->get('SHOP__ITEMS') ?></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                    foreach ($histories as $value) { ?>
+                        <tr>
+                            <td><?= $value["ItemsBuyHistory"]["id"] ?></td>
+                            <td><?= $value["ItemsBuyHistory"]["created"] ?></td>
+                            <td><?= $value["Item"]["price"] ?></td>
+                            <td><?= $value["Item"]["name"] ?></td>
+                        </tr>
+                        <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+		<?php } ?>
         <?= $Module->loadModules('user_profile') ?>
       </div>
       <!-- /.col-md-9 -->
