@@ -34,6 +34,6 @@
         "logo": false
     },
     "supported": {
-        "CMS": "^1.6.0",
+        "CMS": "^1.6.0"
     }
 }
