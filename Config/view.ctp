@@ -1,21 +1,15 @@
 <section class="content">
   <div class="row">
     <div class="col-md-12">
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title"><?= $Lang->get('THEME__CUSTOMIZATION') ?></h3>
+      <div class="card">
+        <div class="card-header with-border">
+          <h3 class="card-title"><?= $Lang->get('THEME__CUSTOMIZATION') ?></h3>
         </div>
-        <div class="box-body">
+        <div class="card-body">
           <form method="post" enctype="multipart/form-data" data-ajax="false">
             <div class="row">
               <div class="col-md-4">
                 <?= $this->element('form.input.upload.img', $form_input) ?>
-              </div>
-              <div class="col-md-8">
-                <div class="form-group">
-                  <label><?= $Lang->get('THEME__FAVICON_URL') ?></label>
-                  <input type="text" class="form-control" name="favicon_url" value="<?= $config['favicon_url'] ?>">
-                </div>
               </div>
             </div>
 
